@@ -1,0 +1,85 @@
+/* Universal */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'ubuntu', sans-serif;
+}
+
+/*********
+***Main***
+*********/
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  height: 100%;
+}
+
+/* Header */
+header {
+  grid-column: 1;
+  padding: 50px 70px;
+  position: relative;
+}
+
+header .introduction {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 80px;
+  color: #9f0100;
+  width: 35em;
+}
+
+header .introduction h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+header .introduction p {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+/* choices */
+#choices {
+  grid-column: 2;
+  background-color: rgb(250,181,60);
+}
+
+#choices .cards {
+  margin-top: 7%;
+}
+
+#choices .card {
+  background: white;
+  border-radius: 15px;
+  color: #b06700;
+  padding: 30px;
+  margin: 50px;
+  position: relative;
+}
+
+#choices .card h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#choices .card p {
+  margin-top: 24px;
+  width: 17.5em;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+#choices .card button {
+  position: absolute;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 6rem;
+  bottom: 0;
+  color: #b06700;
+  opacity: 0.25;
+}
